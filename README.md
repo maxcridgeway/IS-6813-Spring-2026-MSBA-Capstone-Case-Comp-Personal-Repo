@@ -6,41 +6,41 @@ MasterControl provides quality and manufacturing management software to life sci
 ## README: Your group's solution to the business problem.
 Our solution to the business problem stated above involved the following steps. First, we performed exploratory data analysis in order to discern the most useful variables that would be used in building our predictive models. This involved visualizations to learn which variables were most closely correlated to each other, as well as the target variable of ‘is_success’. Next, we worked on building the models' predictive models, including the following.
 
-Logistic Regression (our baseline)
-Random Forest
-MLP-based neural network
-CatBoost
-XGBoost
-LightGBM
-GradientBoosting
-ElasticNet
-BalancedBagging
-StackingEnsemble
-VotingEnsemble
+* Logistic Regression (our baseline)
+* Random Forest
+* MLP-based neural network
+* CatBoost
+* XGBoost
+* LightGBM
+* GradientBoosting
+* ElasticNet
+* BalancedBagging
+* StackingEnsemble
+* VotingEnsemble
 
 Once the models were built, we went through the process of tuning the hyperparameters associated with them to maximize our AUC, Sensitivity, and Specificity scores, which were our main KPIs for measuring the model performance. We then chose the model that we found to be the best mix of all three KPIs as our final predictive model, which, in our case, happened to be the Voting Ensemble model. This model is used to predict the likelihood of success for a Qualified Activity Lead to convert to SQL, SQO, or Won stage.
 
 ## README: Your contribution to the project
 For this project, my contribution started with the business problem statement, where I helped to edit the general structure and specified the details and timeline for our group. I also created the confusion matrix we would be basing the logic for our true positive rate, true negative rate, and any other KPIs on. I also helped to edit the exploratory data analysis notebook. Thomas had taken the reins on it, and I was very satisfied with the work he had done. For our final modeling notebook, I created and tuned all of the following models found within the project.
 
-MLP
-ElasticNet
-BalancedBagging
+* MLP
+* ElasticNet
+* BalancedBagging
 
 I also worked to create many of the feature-engineered variables used within our models to help gain more predictive power. Here are those variables, as well as a quick classification of what they are attempting to model.
 
-‘account_penetration_count',      # Buying Committee Density
- 'has_cross_functional_interest',  # Buying Committee Cross-Interest
-'weekend_warrior',                # Digital Body Language (Recency)
-'form_depth_score',               # Digital Body Language (Intent)
-'exec_momentum_score',            # Title/Intent Interaction
-'channel_momentum',               # Channel/Recency Interaction
-'high_compliance_risk',           # Regulatory Pressure
-'is_growth_tier_decision_maker',  # Growth Tier Power
-'regulatory_urgency_score',       # Risk/Seniority Interaction
- 'is_technical_gatekeeper',        # Semantic Gatekeeper Flag
-'title_length_ratio',             # Semantic Complexity
-'is_niche_specialist'             # Semantic Specialist Flag
+* ‘account_penetration_count',      # Buying Committee Density
+* 'has_cross_functional_interest',  # Buying Committee Cross-Interest
+* 'weekend_warrior',                # Digital Body Language (Recency)
+* 'form_depth_score',               # Digital Body Language (Intent)
+* 'exec_momentum_score',            # Title/Intent Interaction
+* 'channel_momentum',               # Channel/Recency Interaction
+* 'high_compliance_risk',           # Regulatory Pressure
+* 'is_growth_tier_decision_maker',  # Growth Tier Power
+* 'regulatory_urgency_score',       # Risk/Seniority Interaction
+* 'is_technical_gatekeeper',        # Semantic Gatekeeper Flag
+* 'title_length_ratio',             # Semantic Complexity
+* 'is_niche_specialist'             # Semantic Specialist Flag
 
 I also worked as an editor to ensure the overall structure of the code throughout each notebook was consistent and cohesive with the style of that document (variable names, comments, etc.). Once presenting our findings, I edited and presented the sections from our slide deck relating to the modeling approach, model evaluation, and model explainability using SHAP analysis. Finally, I worked as a facilitator when our group would meet to discuss our project and the next steps that would need to be taken throughout the project.
 
